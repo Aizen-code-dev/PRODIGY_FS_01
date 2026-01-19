@@ -31,23 +31,6 @@ This project is developed as part of **Task 01** of the **Full-Stack Web Develop
 
 ---
 
-## 📂 Project Structure
-src/main/java
-└── com.prodigy.auth
-├── controller
-├── model
-├── repository
-├── security
-└── service
-
-src/main/resources
-├── templates
-├── static/css
-└── application.properties
-
-
-
-
 ## 🔐 Security Implementation
 - Passwords are hashed using **BCryptPasswordEncoder**
 - Spring Security manages authentication and authorization
