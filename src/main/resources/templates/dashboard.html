@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="#">SecureAuth</a>
+  <ul>
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="dashboard">
+  <h1>Welcome</h1>
+  <p th:text="'Logged in as: ' + ${username}"></p>
+
+  <p>You are successfully authenticated.</p>
+</div>
+
+</body>
+</html>

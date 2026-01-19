@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/*  NAVBAR  */
+.navbar {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00eaff;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00eaff;
+}
+
+/*  CONTAINER  */
+.container {
+    max-width: 420px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00eaff;
+}
+
+/*  FORMS  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00eaff, #00c6ff);
+    color: #000;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 198, 255, 0.4);
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*  DASHBOARD  */
+.dashboard {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+}
+
+.dashboard h1 {
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+/*  ERROR  */
+.error {
+    color: #ff5c5c;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin: 60px 15px;
+    }
+}
